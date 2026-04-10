@@ -6,7 +6,7 @@ public class Cubo {
     }
 
     public float calcularVolumen() {
-        return (float) (Math.pow(this.lado, 2));
+        return (float) (Math.pow(this.lado, 3));
     }
 
     public float calcularAreaBase() {
