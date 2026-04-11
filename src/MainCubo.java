@@ -9,6 +9,7 @@ public class MainCubo {
 
         crearCubo();
         imprimirVolumen(cubos);
+        imprimirAreaBase(cubos);
     }
 
     public static void crearCubo() {
@@ -22,12 +23,22 @@ public class MainCubo {
             cubos.add(miCubo);
         }
     }
+
     public static void imprimirVolumen(ArrayList<Cubo> cubos) {
         int acumulador = 1;
         for (Cubo c :  cubos) {
-            JOptionPane.showInputDialog(
+            JOptionPane.showMessageDialog(null,
                     "El volúmen del cubo "+acumulador+" es "+c.calcularVolumen());
                     acumulador++;
+        }
+    }
+
+    public static void imprimirAreaBase(ArrayList<Cubo> cubos) {
+        int acumulador = 1;
+        for (Cubo c :  cubos) {
+            JOptionPane.showMessageDialog(null,
+                    "El área base del cubo "+acumulador+" es "+c.calcularAreaBase());
+            acumulador++;
         }
     }
 
