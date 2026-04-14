@@ -86,6 +86,6 @@ public class GestorCubos {
      * @return
      */
     public boolean siCabe(Cubo c1, Cubo c2) {
-        return c1.getLado() < c2.getLado();
+        return c1.getLado() == c2.getLado();
     }
 }

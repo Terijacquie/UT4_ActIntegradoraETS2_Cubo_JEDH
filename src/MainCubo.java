@@ -25,7 +25,7 @@ public class MainCubo {
 
         boolean resultado = gestor.siCabe(c1, c2);
 
-        String mensaje = "¿El cubo "+c1.getNombreCubo()+" cabe dentro de "
+        String mensaje = "¿El cubo "+c1.getNombreCubo()+" cabe exactamente dentro de "
                 +c2.getNombreCubo()+" ? \n" +resultado;
         JOptionPane.showMessageDialog(null, mensaje);
 
